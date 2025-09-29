@@ -7,23 +7,31 @@ body {
   align-items: center;
 }
 
-/* Header image - smaller */
+/* Header image - much smaller banner */
 .header {
   width: 100%;
-  height: 120px; /* reduced height */
+  height: 60px; /* very small banner */
   background: url("../images/header.jpg") no-repeat center center;
   background-size: cover;
+}
+
+/* Form + footer wrapper aligned vertically */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* Form box */
 .form-box {
   background: #ffffff;
-  margin-top: -40px; /* overlap header slightly */
   padding: 30px 25px;
   border-radius: 8px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
   width: 360px;
-  text-align: left; /* align content to left */
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .form-header {
@@ -79,10 +87,9 @@ input[type="email"] {
   background-color: #003d99;
 }
 
-/* Footer image aligned with form */
+/* Footer image aligned with form width */
 .footer-img-wrapper {
-  width: 360px;         /* match form width */
-  margin-top: 20px;
+  width: 360px; /* exactly same as form */
 }
 
 .footer-img {
