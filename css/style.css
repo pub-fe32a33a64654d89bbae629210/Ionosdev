@@ -1,19 +1,4 @@
-/* Fixed full image banner */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-.header img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-height: 250px; /* fixed banner height */
-}
-
-/* Container below header */
+/* Form container */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -21,77 +6,27 @@
   margin-top: calc(250px + 96px); /* header height + 1 inch gap */
 }
 
-/* Smaller form box */
+/* Enlarged form */
 .form-box {
   background: #ffffff;
-  padding: 50px 40px;
+  padding: 60px 50px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  width: 450px;  /* smaller width */
-  min-height: 400px; /* keep reasonable height */
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+  width: 500px;         /* bigger than previous */
+  min-height: 450px;
   text-align: left;
-  margin-bottom: 96px; /* 1 inch gap before footer */
-}
-
-/* Logo aligned left */
-.form-logo {
-  height: 70px; /* smaller logo */
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Labels + inputs */
-label {
-  display: block;
-  font-size: 15px;
-  margin-bottom: 6px;
-  color: #333;
-}
-
-input[type="email"] {
-  width: 100%;
-  padding: 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-/* Info text */
-.info-text {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-/* Button same width, curved */
-.weiter-btn {
-  display: inline-block;
-  width: 100%;
-  padding: 14px;
-  background-color: #0052cc;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.weiter-btn:hover {
-  background-color: #003d99;
+  margin-bottom: 96px;  /* 1 inch gap before footer */
 }
 
 /* Footer aligned with form */
 .footer-img-wrapper {
-  width: 450px; /* match form width */
+  width: 500px;          /* same as form */
+  margin-bottom: 50px;   /* optional padding at bottom of page */
 }
 
 .footer-img {
   width: 100%;
-  height: 200px; /* slightly below half of form height */
+  height: 225px;         /* slightly less than half of form */
   object-fit: cover;
   border-radius: 8px;
   display: block;
