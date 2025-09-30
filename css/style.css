@@ -7,12 +7,13 @@ body {
   align-items: center;
 }
 
-/* Slim header banner */
+/* Slim header banner - full image visible */
 .header {
-  width: 50%;
-  height: 80px; /* smaller strip */
+  width: 100%;
+  height: 80px; /* adjust to fit entire image proportionally */
   background: url("../images/header.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: contain; /* shows the full image */
+  background-color: #f8f8f5; /* optional: fills gaps if image doesn't fully cover width */
 }
 
 /* Container keeps form + footer aligned */
@@ -98,6 +99,7 @@ input[type="email"] {
   border-radius: 6px;
   display: block;
 }
+
 
 
 
