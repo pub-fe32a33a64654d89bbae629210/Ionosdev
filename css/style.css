@@ -9,7 +9,7 @@ body {
 
 /* Slim header banner */
 .header {
-  width: 100%;
+  width: 50%;
   height: 80px; /* smaller strip */
   background: url("../images/header.jpg") no-repeat center center;
   background-size: cover;
@@ -98,5 +98,6 @@ input[type="email"] {
   border-radius: 6px;
   display: block;
 }
+
 
 
