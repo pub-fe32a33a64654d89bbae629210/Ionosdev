@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9fbfd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Fixed full image banner */
 .header {
   position: fixed;
@@ -19,14 +10,15 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  max-height: 250px; /* limit banner height */
 }
 
-/* Push content down below fixed header */
+/* Push content just below banner */
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 300px; /* adjust so form starts below banner height */
+  margin-top: 260px; /* just below header (matches header height) */
 }
 
 /* Enlarged form box */
@@ -40,7 +32,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Bigger logo aligned left */
+/* Logo aligned left and bigger */
 .form-logo {
   height: 90px;
   display: block;
@@ -72,17 +64,17 @@ input[type="email"] {
   line-height: 1.5;
 }
 
-/* Button */
+/* Button matches input width and curved */
 .weiter-btn {
   display: inline-block;
-  width: 100%;              /* same as input */
+  width: 100%;
   padding: 16px;
   background-color: #0052cc;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 30px;      /* more curved edges */
+  border-radius: 30px; /* curved button */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -91,17 +83,15 @@ input[type="email"] {
   background-color: #003d99;
 }
 
-
-/* Bigger footer image aligned with form */
+/* Footer aligned with form, smaller height */
 .footer-img-wrapper {
   width: 600px; /* matches form width */
 }
 
 .footer-img {
   width: 100%;
-  height: 500px; /* make footer taller */
-  object-fit: cover; /* fill area nicely */
+  height: 200px; /* smaller footer */
+  object-fit: cover;
   border-radius: 8px;
   display: block;
 }
-
