@@ -10,7 +10,7 @@
   width: 100%;
   height: auto;
   display: block;
-  max-height: 250px; /* limit banner height */
+  max-height: 250px; /* fixed banner height */
 }
 
 /* Container below header */
@@ -18,51 +18,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(250px + 96px); 
-  /* header height + 1 inch gap */
+  margin-top: calc(250px + 96px); /* header height + 1 inch gap */
 }
 
-/* Enlarged form box */
+/* Smaller form box */
 .form-box {
   background: #ffffff;
-  padding: 60px 50px;
+  padding: 50px 40px;
   border-radius: 12px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-  width: 600px;
-  min-height: 500px; /* ensure good height */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 450px;  /* smaller width */
+  min-height: 400px; /* keep reasonable height */
   text-align: left;
   margin-bottom: 96px; /* 1 inch gap before footer */
 }
 
-/* Bigger logo aligned left */
+/* Logo aligned left */
 .form-logo {
-  height: 90px;
+  height: 70px; /* smaller logo */
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /* Labels + inputs */
 label {
   display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 6px;
   color: #333;
 }
 
 input[type="email"] {
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-bottom: 22px;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
 /* Info text */
 .info-text {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
 
@@ -70,10 +69,10 @@ input[type="email"] {
 .weiter-btn {
   display: inline-block;
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   background-color: #0052cc;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 30px;
@@ -87,12 +86,12 @@ input[type="email"] {
 
 /* Footer aligned with form */
 .footer-img-wrapper {
-  width: 600px; /* match form width */
+  width: 450px; /* match form width */
 }
 
 .footer-img {
   width: 100%;
-  height: 250px; /* slightly below half of form height */
+  height: 200px; /* slightly below half of form height */
   object-fit: cover;
   border-radius: 8px;
   display: block;
