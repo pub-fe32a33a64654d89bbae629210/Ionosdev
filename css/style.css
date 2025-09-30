@@ -1,19 +1,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f8f5; /* off-white */
+  background-color: lightskyblue; /* new background */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Slim header banner - full image visible */
-.header {
+/* Full image banner */
+.header img {
   width: 100%;
-  height: 80px; /* adjust to fit entire image proportionally */
-  background: url("../images/header.jpg") no-repeat center center;
-  background-size: contain; /* shows the full image */
-  background-color: #f8f8f5; /* optional: fills gaps if image doesn't fully cover width */
+  height: auto;
+  display: block;
 }
 
 /* Container keeps form + footer aligned */
@@ -21,63 +19,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px; /* push form lower */
+  margin-top: 40px;
 }
 
-/* Enlarged form box */
+/* Bigger form box */
 .form-box {
   background: #ffffff;
-  padding: 40px 30px;
-  border-radius: 8px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-  width: 420px;  /* larger width to match footer */
+  padding: 50px 40px; /* more padding */
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+  width: 500px;       /* wider form */
   text-align: left;
   margin-bottom: 20px;
 }
 
-.form-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
+/* Larger logo */
 .form-logo {
-  height: 40px;
+  height: 70px; /* bigger logo */
+  display: block;
+  margin: 0 auto 20px auto; /* centered with spacing */
 }
 
 /* Labels + inputs */
 label {
   display: block;
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #444;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 input[type="email"] {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-bottom: 15px;
-  font-size: 14px;
-  background: #fff;
+  margin-bottom: 18px;
+  font-size: 15px;
 }
 
 /* Info text */
 .info-text {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 20px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 22px;
 }
 
 /* Button */
 .weiter-btn {
   display: inline-block;
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background-color: #0052cc;
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -88,18 +82,14 @@ input[type="email"] {
   background-color: #003d99;
 }
 
-/* Footer image matches form width */
+/* Footer image aligned with form */
 .footer-img-wrapper {
-  width: 420px; /* same as form */
+  width: 500px; /* matches form-box */
 }
 
 .footer-img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
   display: block;
 }
-
-
-
-
