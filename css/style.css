@@ -1,107 +1,95 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9fbfd; /* soft background */
+  background-color: #f4f7fa; /* new soft light background */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Fixed Header Banner */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
+/* Full image banner */
 .header img {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 250px;
 }
 
-/* Main content container: form + footer */
-.main-content {
+/* Container keeps form + footer aligned */
+.form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: calc(250px + 40px); /* header height + small gap */
-  padding-bottom: 50px; /* bottom spacing */
+  margin-top: 40px;
 }
 
-/* Form Box */
+/* Bigger form box */
 .form-box {
   background: #ffffff;
-  width: 500px;
-  padding: 50px 40px;
+  padding: 50px 40px; /* more padding */
   border-radius: 12px;
   box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+  width: 500px;       /* wider form */
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 40px; /* space between form and footer */
+  margin-bottom: 20px;
 }
 
-/* Logo left-aligned and bigger */
+/* Larger logo */
 .form-logo {
-  height: 90px;
+  height: 70px; /* bigger logo */
   display: block;
-  margin-bottom: 25px;
+  margin: 0 auto 20px auto; /* centered with spacing */
 }
 
-/* Labels and Inputs */
+/* Labels + inputs */
 label {
   display: block;
-  font-size: 16px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 6px;
   color: #333;
 }
+
 input[type="email"] {
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-bottom: 22px;
-  font-size: 16px;
+  margin-bottom: 18px;
+  font-size: 15px;
 }
 
 /* Info text */
 .info-text {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
-  margin-bottom: 24px;
-  line-height: 1.5;
+  margin-bottom: 22px;
 }
 
-/* Button same width as input, curved */
+/* Button */
 .weiter-btn {
+  display: inline-block;
   width: 100%;
-  padding: 16px;
+  padding: 14px;
   background-color: #0052cc;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
-  border-radius: 30px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 .weiter-btn:hover {
   background-color: #003d99;
 }
 
-/* Footer aligned with form */
+/* Footer image aligned with form */
 .footer-img-wrapper {
-  width: 500px; /* same width as form */
+  width: 500px; /* matches form-box */
 }
+
 .footer-img {
   width: 100%;
-  height: 225px; /* half of form height */
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
   display: block;
 }
