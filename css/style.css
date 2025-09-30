@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f7fa; /* new soft light background */
+  background-color: #f9fbfd; /* lighter background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,56 +22,57 @@ body {
   margin-top: 40px;
 }
 
-/* Bigger form box */
+/* Enlarged form box */
 .form-box {
   background: #ffffff;
-  padding: 50px 40px; /* more padding */
+  padding: 60px 50px; /* more padding */
   border-radius: 12px;
   box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-  width: 500px;       /* wider form */
+  width: 600px;       /* wider form */
   text-align: left;
   margin-bottom: 20px;
 }
 
-/* Larger logo */
+/* Bigger logo aligned left */
 .form-logo {
-  height: 70px; /* bigger logo */
+  height: 90px; /* enlarged logo */
   display: block;
-  margin: 0 auto 20px auto; /* centered with spacing */
+  margin-bottom: 25px;
 }
 
 /* Labels + inputs */
 label {
   display: block;
-  font-size: 15px;
-  margin-bottom: 6px;
+  font-size: 16px;
+  margin-bottom: 8px;
   color: #333;
 }
 
 input[type="email"] {
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  margin-bottom: 18px;
-  font-size: 15px;
+  margin-bottom: 22px;
+  font-size: 16px;
 }
 
 /* Info text */
 .info-text {
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+  line-height: 1.5;
 }
 
 /* Button */
 .weiter-btn {
   display: inline-block;
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   background-color: #0052cc;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -82,9 +83,9 @@ input[type="email"] {
   background-color: #003d99;
 }
 
-/* Footer image aligned with form */
+/* Footer image aligned with form width */
 .footer-img-wrapper {
-  width: 500px; /* matches form-box */
+  width: 600px; /* matches enlarged form */
 }
 
 .footer-img {
