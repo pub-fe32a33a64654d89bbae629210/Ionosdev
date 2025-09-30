@@ -75,20 +75,22 @@ input[type="email"] {
 /* Button */
 .weiter-btn {
   display: inline-block;
-  width: 100%;
+  width: 100%;              /* same as input */
   padding: 16px;
   background-color: #0052cc;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 30px;      /* more curved edges */
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .weiter-btn:hover {
   background-color: #003d99;
 }
+
 
 /* Bigger footer image aligned with form */
 .footer-img-wrapper {
@@ -102,3 +104,4 @@ input[type="email"] {
   border-radius: 8px;
   display: block;
 }
+
